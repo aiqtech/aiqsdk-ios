@@ -19,11 +19,6 @@ typedef NS_ENUM(NSUInteger, AIQApiHeaderOptionsGender) {
     AIQApiHeaderOptionsGenderMale
 };
 
-typedef NS_ENUM(NSUInteger, AIQApiTriggerType) {
-    AIQApiVideoTrigger = 0,
-    AIQApiImageTrigger = 1
-};
-
 @interface AIQApiClient : NSObject
 
 + (instancetype)sharedClient;

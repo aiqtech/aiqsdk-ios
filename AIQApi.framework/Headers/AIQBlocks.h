@@ -9,8 +9,9 @@
 #ifndef AIQBlocks_h
 #define AIQBlocks_h
 
+#import "AIQScan.h"
 
-@class AIQApiAuthToken, AIQScanAPIResponse;
+@class AIQApiAuthToken;
 
 /**
  A callback to be run with a token response

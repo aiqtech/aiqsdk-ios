@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import "AIQApiResponseDecodable.h"
-#import "AIQApiClient.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+typedef NS_ENUM(NSUInteger, AIQApiTriggerType) {
+    AIQApiVideoTrigger = 0,
+    AIQApiImageTrigger = 1
+};
 
 @interface AIQScanAPIResponse : NSObject <AIQApiResponseDecodable>
 
