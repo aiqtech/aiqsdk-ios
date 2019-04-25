@@ -73,14 +73,4 @@ typedef NS_ENUM(NSUInteger, AIQApiTriggerType) {
 
 @end
 
-@interface AIQApi : NSObject
-
-+ (NSString *)apiVersion;
-
-+ (NSString *)sdkVersion;
-
-+ (AIQApiClient *)sharedApiClient;
-
-@end
-
 NS_ASSUME_NONNULL_END

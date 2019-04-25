@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "AIQSDK"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "AIQSDK is the iOS SDK for AIQ's computer vision platform."
   s.description  = <<-DESC
                    The AIQ SDK for iOS provides frameworks to utilze AIQ's computer vision platform:
@@ -24,11 +24,11 @@ Pod::Spec.new do |s|
                    }
   
   s.ios.deployment_target = '8.0'
-  s.preserve_paths = 'Frameworks/*.framework'
+  s.preserve_paths = '*.framework'
   s.default_subspec = 'AIQApi'
 
   s.subspec 'AIQApi' do |ss|
-    ss.vendored_frameworks = "Frameworks/AIQApi.framework"
+    ss.vendored_frameworks = "AIQApi.framework"
   end
 
 end
