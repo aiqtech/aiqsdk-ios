@@ -12,7 +12,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AIQApiAuthToken : NSObject <AIQApiResponseDecodable>
+@interface AIQApiAuthToken : NSObject <AIQApiResponseDecodable, NSCopying>
+
+@property (nonatomic, assign) NSTimeInterval expireIn;
+@property (nonatomic, assign) NSTimeInterval expire;
+@property (nonatomic, readwrite, nonnull, copy) NSDictionary *allResponseFields;
+@property (nonatomic, readwrite, nonnull, copy) NSString *token;
 
 + (instancetype)token;
 
@@ -21,6 +26,11 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isValid;
 
 - (BOOL)expired;
+
++ (void)setToken:(nonnull id)token;
+
++ (void)clear;
+
 @end
 
 NS_ASSUME_NONNULL_END

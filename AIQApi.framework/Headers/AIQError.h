@@ -68,8 +68,13 @@ typedef AIQ_ERROR_ENUM(NSInteger, AIQErrorCode, AIQDomain) {
     // Connection Error
     AIQConnectionEror = 300,
     
+    
     // Not implemented
-    AIQMethodNotImplemented = 999
+    AIQMethodNotImplemented = 999,
+    
+    // AIQSDK Error
+    AIQSDKErrorImageNotValid = 1000
+    
 };
 
 NS_ASSUME_NONNULL_BEGIN
