@@ -28,6 +28,7 @@ typedef NS_ENUM(NSUInteger, AIQApiTriggerType) {
 @property (nonatomic, readonly, copy) NSString *payloadUrl;
 @property (nonatomic, readonly, copy) NSString *payloadData;
 @property (nonatomic, readonly, copy) NSString *triggerName;
+@property (nonatomic, readonly, copy) NSArray *ocrData;
 
 @property (nonatomic, readonly) AIQApiTriggerType triggerType;
 @property (nonatomic, readonly) NSInteger triggerFps;
