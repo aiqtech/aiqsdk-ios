@@ -2,15 +2,21 @@
 All notable changes to AIQSDK will be documented in this file.
 `AIQSDK` adheres to [Semantic Versioning](http://semver.org/).
 ---
+## [0.2.2](https://github.com/aiqtech/aiqsdk-ios/releases/tag/0.2.2) (02/05/2019)
+Released on Thurs, May 02, 2019.
 
-## [0.2.1](https://github.com/aiqtech/aiqsdk-ios/releases/tag/0.2.1) (14/11/2018)
+#### Updates for AIQApi
+* Bug fixes
+* Updates to AIQ User API  
+
+## [0.2.1](https://github.com/aiqtech/aiqsdk-ios/releases/tag/0.2.1) (29/04/2019)
 Released on Mon, April 29, 2019.
 
 #### Updates for AIQApi
 * Bug fixes
-* Initial release for Search & OCR pipeline - ocrData 
+* Initial release for Search & OCR pipeline with ocrData as part of AIQScanAPIResponse 
 
-## [0.2.0](https://github.com/aiqtech/aiqsdk-ios/releases/tag/0.2.0) (14/11/2018)
+## [0.2.0](https://github.com/aiqtech/aiqsdk-ios/releases/tag/0.2.0) (26/04/2019)
 Released on Fri, April 26, 2019.
 
 #### Updates for AIQApi
