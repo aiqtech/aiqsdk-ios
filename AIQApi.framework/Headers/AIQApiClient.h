@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 #import "AIQBlocks.h"
 
+@class AIQUser;
+
 NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSUInteger, AIQApiHeaderOptionsGender) {
@@ -34,6 +36,23 @@ typedef NS_ENUM(NSUInteger, AIQApiHeaderOptionsGender) {
 + (void)setUserGender:(AIQApiHeaderOptionsGender)gender;
 
 + (void)setUserLocationLatitude:(float)lat longitude:(float)lng;
+
+@end
+
+@interface AIQApiClient (User)
+
+- (void)updateUserProfile:(AIQUser *)user withCompletion:(AIQUserRequestCompletionBlock)completion;
+
+
+- (void)updateUserAvatar:(AIQUser *)user
+               withImage:(UIImage *)image
+          withCompletion:(AIQUserRequestCompletionBlock)completion;
+
+- (void)retrieveUser:(NSString *)userToken withCompletion:(AIQUserRequestCompletionBlock)completion;
+
+- (void)registerUser:(AIQUser *)user withCompletion:(AIQUserRequestCompletionBlock)completion;
+
+- (void)loginUser:(AIQUser *)user withCompletion:(AIQUserLoginCompletionBlock)completion;
 
 @end
 

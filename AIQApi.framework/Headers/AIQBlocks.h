@@ -11,7 +11,7 @@
 
 #import "AIQScan.h"
 
-@class AIQApiAuthToken;
+@class AIQApiAuthToken, AIQUserAPIResponse;
 
 /**
  A callback to be run with a token response
@@ -34,5 +34,15 @@ typedef void (^AIQScanHistoryCompletionBlock)(NSArray * __nullable result, NSErr
 typedef void (^AIQApiAuthTokenCompletionBlock)(BOOL result, NSError * __nullable error);
 
 typedef void (^AIQScanCompletionBlock)(AIQScanAPIResponse * __nullable result, NSError * __nullable error);
+
+/**
+ A callback to be run with register user
+ 
+ */
+typedef void (^AIQUserRequestCompletionBlock)(AIQUserAPIResponse * __nullable response, NSError * __nullable error);
+typedef void (^AIQUserLoginCompletionBlock)(AIQUserAPIResponse * __nullable response, NSError * __nullable error);
+
+
+
 
 #endif /* AIQBlocks_h */

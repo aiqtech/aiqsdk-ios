@@ -8,8 +8,7 @@ Released on Mon, April 29, 2019.
 
 #### Updates for AIQApi
 * Bug fixes
-* Initial release for Image + OCR pipeline - ocrData 
-
+* Initial release for Search & OCR pipeline - ocrData 
 
 ## [0.2.0](https://github.com/aiqtech/aiqsdk-ios/releases/tag/0.2.0) (14/11/2018)
 Released on Fri, April 26, 2019.

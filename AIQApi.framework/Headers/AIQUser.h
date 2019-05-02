@@ -11,18 +11,42 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface AIQUserAPIResponse : NSObject <AIQApiResponseDecodable>
+
+@property (nonatomic, readonly, copy) NSString *email;
+@property (nonatomic, readonly, copy) NSString *name;
+@property (nonatomic, readonly, copy) NSString *gender;
+@property (nonatomic, readonly, copy) NSString *birthdate;
+@property (nonatomic, readonly, copy) NSString *avatar;
+@property (nonatomic, readonly, copy) NSString *token;
+
+@end
+
+
+
 @interface AIQUser : NSObject
 
-@property (nonatomic, readonly) NSString *AIQUserId;
-@property (nonatomic, readonly) NSString *AIQUserGender;
-@property (nonatomic, readonly) NSString *AIQUserAge;
-@property (nonatomic, readonly) NSString *AIQDeviceType;
-@property (nonatomic, readonly) NSString *AIQDeviceModel;
-@property (nonatomic, readonly) NSString *AIQDeviceVersion;
-@property (nonatomic, readonly) NSString *AIQAppVersion;
 
-@property (nonatomic, readonly) float AIQUserLat;
-@property (nonatomic, readonly) float AIQUserLng;
+@property (nonatomic, readwrite) NSString *AIQUserEmail;
+@property (nonatomic, readwrite) NSString *AIQUserPassword;
+@property (nonatomic, readwrite) NSString *AIQUserName;
+@property (nonatomic, readwrite) NSString *AIQUserBirthdate;
+
+@property (nonatomic, readwrite) NSString *AIQUserId;
+@property (nonatomic, readwrite) NSString *AIQUserGender;
+@property (nonatomic, readwrite) NSString *AIQUserAge;
+@property (nonatomic, readwrite) NSString *AIQDeviceType;
+@property (nonatomic, readwrite) NSString *AIQDeviceModel;
+@property (nonatomic, readwrite) NSString *AIQDeviceVersion;
+@property (nonatomic, readwrite) NSString *AIQAppVersion;
+
+@property (nonatomic, readwrite) float AIQUserLat;
+@property (nonatomic, readwrite) float AIQUserLng;
+
+- (NSDictionary *)requiredParameters;
+- (NSDictionary *)optionalParameters;
+- (NSDictionary *)allParameters;
+- (NSDictionary *)loginParameters;
 
 @end
 
