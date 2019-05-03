@@ -31,6 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readwrite) NSString *AIQUserPassword;
 @property (nonatomic, readwrite) NSString *AIQUserName;
 @property (nonatomic, readwrite) NSString *AIQUserBirthdate;
+@property (nonatomic, readwrite) NSString *AIQUserAvatar;
 
 @property (nonatomic, readwrite) NSString *AIQUserId;
 @property (nonatomic, readwrite) NSString *AIQUserGender;
@@ -42,6 +43,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readwrite) float AIQUserLat;
 @property (nonatomic, readwrite) float AIQUserLng;
+
++ (instancetype)initFromDictionary:(NSDictionary *)userDictionary;
+- (instancetype)initFromDictionary:(NSDictionary *)userDictionary;
 
 - (NSDictionary *)requiredParameters;
 - (NSDictionary *)optionalParameters;

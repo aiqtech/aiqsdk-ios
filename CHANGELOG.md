@@ -2,6 +2,13 @@
 All notable changes to AIQSDK will be documented in this file.
 `AIQSDK` adheres to [Semantic Versioning](http://semver.org/).
 ---
+## [0.2.3](https://github.com/aiqtech/aiqsdk-ios/releases/tag/0.2.3) (03/05/2019)
+Released on Fri, May 03, 2019.
+
+#### Updates for AIQApi
+* Bug fixes
+* Update AIQUser and API to updating user profile
+
 ## [0.2.2](https://github.com/aiqtech/aiqsdk-ios/releases/tag/0.2.2) (02/05/2019)
 Released on Thurs, May 02, 2019.
 

@@ -17,6 +17,7 @@ FOUNDATION_EXPORT const unsigned char AIQApiVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <AIQApi/PublicHeader.h>
 #import "AIQApiClient.h"
 #import "AIQApiAuthToken.h"
+#import "AIQUser.h"
 
 @interface AIQApi : NSObject
 
