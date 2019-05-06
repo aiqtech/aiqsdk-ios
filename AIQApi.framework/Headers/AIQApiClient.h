@@ -54,6 +54,8 @@ typedef NS_ENUM(NSUInteger, AIQApiHeaderOptionsGender) {
 
 - (void)loginUser:(AIQUser *)user withCompletion:(AIQUserLoginCompletionBlock)completion;
 
+- (void)logoutUser:(AIQUser *)user withCompletion:(AIQUserRequestCompletionBlock)completion;
+
 @end
 
 @interface AIQApiClient (Collections)

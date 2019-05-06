@@ -73,7 +73,8 @@ typedef AIQ_ERROR_ENUM(NSInteger, AIQErrorCode, AIQDomain) {
     AIQMethodNotImplemented = 999,
     
     // AIQSDK Error
-    AIQSDKErrorImageNotValid = 1000
+    AIQSDKErrorImageNotValid = 1000,
+    AIQSDKErrorRequiredUserInvalid = 10001,
     
 };
 
