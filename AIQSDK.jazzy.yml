@@ -1,0 +1,17 @@
+# Ordered by output of `jazzy --help config`
+
+output: docs
+clean: true
+objc: true
+umbrella_header: AIQApi.framework/Headers/AIQApi.h
+framework_root: .
+sdk: iphonesimulator
+author: AIQ
+author_url: https://aiq.tech
+module: AIQApi
+github_url: https://github.com/aiqtech/aiqsdk-ios
+github_file_prefix: https://github.com/aiqtech/aiqsdk-ios/tree/master
+skip_undocumented: true
+hide_documentation_coverage: true
+theme: fullwidth
+
