@@ -17,18 +17,39 @@ Run `pod install` to download AIQSDK and install it into your project. AIQSDK cu
 
 Initialization
 ---------------
-
-#### Required
-
 In your App Delegate, initialise the SDK with the App ID and secret you obtained from the [AIQ Dashboard Portal](https://dashboard.aiq.tech):
 
 ```objc
-#import <AIQApi/AIQApi.h>
+    #import <AIQApi/AIQApi.h>
 ```
 
 ```objc
- [AIQApi initializeWithAppKey:@"appID" appSecret:@"appSecret"];
+    [AIQApi initializeWithAppKey:@"appID" appSecret:@"appSecret"];
 ```
 
+Search using Image
+----------------
+AS part of AIQAiq framework, you can easily make API calls to AIQ's platform API using AIQApiClient.
+
+This is especially useful when you have built your own camera / scanner view.
+```objc
+    [[AIQApiClient sharedClient] scanWithImage:[UIImage imageWithData:imageData] 
+                               withCompletion:^(AIQScanAPIResponse * _Nullable result, NSError * _Nullable error)
+    {                  
+        // no matches found
+        if (error) {
+            // handle it
+            // display no image found
+        } else {
+
+            if (result.payloadUrl)
+            {
+                NSURL *payloadURL = [NSURL URLWithString:result.payloadUrl];
+                // present and load trigger url in your webview controller
+            }
+        }
+    }];
+```      
+     
 
 
