@@ -80,7 +80,26 @@
             
             <h1 id='aiqsdk-ios' class='heading'>aiqsdk-ios</h1>
 
-<p>AIQ SDK for iOS</p>
+<p>AIQSDK is a cocoapod for AIQ&rsquo;s iOS SDK.</p>
+<h2 id='integration-using-cocoapods' class='heading'>Integration using Cocoapods</h2>
+
+<p>AIQSDK is structure with subspecs with the default being AIQApi, the iOS library for using AIQ&rsquo;s API.</p>
+
+<p>Just with any other Cocoapod&rsquo;s project, to use AIQ&rsquo;s API for your iOS application, all you need is to include AIQSDK in your podfile.</p>
+
+<p>Using <a href="https://cocoapods.org">CocoaPods</a>, add to your podfile:</p>
+<pre class="highlight plaintext"><code>pod 'AIQSDK'
+</code></pre>
+
+<p>Run <code>pod install</code> to download AIQSDK and install it into your project. AIQSDK currently has no third party dependencies.</p>
+<h2 id='initialization' class='heading'>Initialization</h2>
+<h4 id='required' class='heading'>Required</h4>
+
+<p>In your App Delegate, initialise the SDK with the App ID and secret you obtained from the <a href="https://dashboard.aiq.tech">AIQ Dashboard Portal</a>:</p>
+<pre class="highlight objective_c"><code><span class="cp">#import &lt;AIQApi/AIQApi.h&gt;
+</span></code></pre>
+<pre class="highlight objective_c"><code> <span class="p">[</span><span class="n">AIQApi</span> <span class="nf">initializeWithAppKey</span><span class="p">:</span><span class="s">@"appID"</span> <span class="nf">appSecret</span><span class="p">:</span><span class="s">@"appSecret"</span><span class="p">];</span>
+</code></pre>
 
           </div>
         </section>
