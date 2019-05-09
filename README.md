@@ -50,6 +50,31 @@ This is especially useful when you have built your own camera / scanner view.
         }
     }];
 ```      
+
+Search using Url
+----------------
+AS part of AIQAiq framework, you can easily make API calls to AIQ's platform API using AIQApiClient.
+
+This is especially useful when you have built your own camera / scanner view.
+```objc
+    [[AIQApiClient sharedClient] scanWithUrl:imageUrl 
+                              withCompletion:^(AIQScanAPIResponse * _Nullable result, NSError * _Nullable error)
+    {                  
+        // no matches found
+        if (error) {
+            // handle it
+            // display no image found
+        } else {
+
+            if (result.payloadUrl)
+            {
+                NSURL *payloadURL = [NSURL URLWithString:result.payloadUrl];
+                // present and load trigger url in your webview controller
+            }
+        }
+    }];
+```      
+     
      
 
 
