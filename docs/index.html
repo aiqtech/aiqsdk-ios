@@ -123,9 +123,7 @@
 </code></pre>
 <h2 id='search-using-url' class='heading'>Search using Url</h2>
 
-<p>AS part of AIQAiq framework, you can easily make API calls to AIQ&rsquo;s platform API using AIQApiClient.</p>
-
-<p>This is especially useful when you have built your own camera / scanner view.</p>
+<p>If you have an url for an image that you like to perform a search query, you can use the scanWithUrl method of <code>AIQApiClient</code>.</p>
 <pre class="highlight objective_c"><code>    <span class="p">[[</span><span class="n">AIQApiClient</span> <span class="nf">sharedClient</span><span class="p">]</span> <span class="nf">scanWithUrl</span><span class="p">:</span><span class="n">imageUrl</span> 
                               <span class="nf">withCompletion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">AIQScanAPIResponse</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">result</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span>
     <span class="p">{</span>                  

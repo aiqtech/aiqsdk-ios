@@ -34,6 +34,7 @@ release_version="$(cat "./VERSION")"
 
 info "Executing jazzy..."
 jazzy \
+  --module-version $release_version \
   --config "./AIQSDK.jazzy.yml" \
   --github-file-prefix "https://github.com/aiqtech/aiqsdk-ios/tree/v${release_version}"
 

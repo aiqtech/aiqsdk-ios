@@ -53,9 +53,8 @@ This is especially useful when you have built your own camera / scanner view.
 
 Search using Url
 ----------------
-AS part of AIQAiq framework, you can easily make API calls to AIQ's platform API using AIQApiClient.
+If you have an url for an image that you like to perform a search query, you can use the scanWithUrl method of `AIQApiClient`.
 
-This is especially useful when you have built your own camera / scanner view.
 ```objc
     [[AIQApiClient sharedClient] scanWithUrl:imageUrl 
                               withCompletion:^(AIQScanAPIResponse * _Nullable result, NSError * _Nullable error)
