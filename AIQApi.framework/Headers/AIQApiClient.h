@@ -14,6 +14,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/// AIQApiHeaderOptionsGender
+/// For indicating user gender for API requests
 typedef NS_ENUM(NSUInteger, AIQApiHeaderOptionsGender) {
     AIQApiHeaderOptionsGenderUnspecified = 1,
     AIQApiHeaderOptionsGenderDefault = AIQApiHeaderOptionsGenderUnspecified,
@@ -21,6 +23,7 @@ typedef NS_ENUM(NSUInteger, AIQApiHeaderOptionsGender) {
     AIQApiHeaderOptionsGenderMale
 };
 
+/// AIQApiClient
 @interface AIQApiClient : NSObject
 
 + (instancetype)sharedClient;
@@ -39,8 +42,17 @@ typedef NS_ENUM(NSUInteger, AIQApiHeaderOptionsGender) {
 
 @end
 
+/**
+ AIQApiClient extensions for user related APIs.
+ */
 @interface AIQApiClient (User)
 
+/**
+ Updates an AIQUser using AIQ user API
+ 
+ @param user The AIQUser object
+ @param completion  The callback to run with the returned response from the API request.
+ */
 - (void)updateUserProfile:(AIQUser *)user withCompletion:(AIQUserRequestCompletionBlock)completion;
 
 
@@ -58,12 +70,22 @@ typedef NS_ENUM(NSUInteger, AIQApiHeaderOptionsGender) {
 
 @end
 
-@interface AIQApiClient (Collections)
 
+/**
+ AIQApiClient extensions for collections related APIs.
+ */
+@interface AIQApiClient (Collections)
+/**
+ Retrieves the collections available for an AIQ App
+@param completion The AIQCollectionsCompletionBlock callback returns an array in results
+ */
 - (void)retrieveCollectionsWithCompletion:(AIQCollectionsCompletionBlock)completion;
 
 @end
 
+/**
+ AIQApiClient extensions for scan history related APIs.
+ */
 @interface AIQApiClient (ScanHistory)
 - (void)retrieveScanHistoryWithCount:(NSInteger)count
                           withOffset:(NSInteger)offset
@@ -71,6 +93,9 @@ typedef NS_ENUM(NSUInteger, AIQApiHeaderOptionsGender) {
 
 @end
 
+/**
+ AIQApiClient extensions for scan (searching) related APIs.
+ */
 @interface AIQApiClient (Scan)
 
 - (void)scanWithUrl:(NSURL *)fileUrl

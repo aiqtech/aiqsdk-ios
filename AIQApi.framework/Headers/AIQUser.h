@@ -11,6 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ AIQUser request response class for AIQ User API
+ */
 @interface AIQUserAPIResponse : NSObject <AIQApiResponseDecodable>
 
 @property (nonatomic, readonly, copy) NSString *email;
@@ -22,8 +25,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-
-
+/**
+ AIQUser main class for AIQUser object
+ */
 @interface AIQUser : NSObject
 
 

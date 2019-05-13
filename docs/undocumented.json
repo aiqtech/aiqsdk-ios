@@ -30,51 +30,142 @@
     },
     {
       "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
-      "line": 17,
-      "symbol": "AIQApiHeaderOptionsGender",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.enum",
+      "line": 20,
+      "symbol": "AIQApiHeaderOptionsGender.AIQApiHeaderOptionsGenderUnspecified",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
-      "line": 17,
-      "symbol": "AIQApiHeaderOptionsGender",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.typedef",
+      "line": 21,
+      "symbol": "AIQApiHeaderOptionsGender.AIQApiHeaderOptionsGenderDefault",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
-      "line": 24,
-      "symbol": "AIQApiClient",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "line": 22,
+      "symbol": "AIQApiHeaderOptionsGender.AIQApiHeaderOptionsGenderFemale",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
-      "line": 42,
-      "symbol": "AIQApiClient(User)",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "line": 23,
+      "symbol": "AIQApiHeaderOptionsGender.AIQApiHeaderOptionsGenderMale",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.enumcase",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
-      "line": 61,
-      "symbol": "AIQApiClient(Collections)",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "line": 29,
+      "symbol": "AIQApiClient.+sharedClient",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
+      "line": 31,
+      "symbol": "AIQApiClient.+initializeWithAppKey:appSecret:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
+      "line": 33,
+      "symbol": "AIQApiClient.+initializeWithAppKey:appSecret:userId:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
+      "line": 37,
+      "symbol": "AIQApiClient.+setUserAge:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
+      "line": 39,
+      "symbol": "AIQApiClient.+setUserGender:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
+      "line": 41,
+      "symbol": "AIQApiClient.+setUserLocationLatitude:longitude:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
+      "line": 59,
+      "symbol": "AIQApiClient(User).-updateUserAvatar:withImage:withCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
+      "line": 63,
+      "symbol": "AIQApiClient(User).-retrieveUser:withCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
+      "line": 65,
+      "symbol": "AIQApiClient(User).-registerUser:withCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
       "line": 67,
-      "symbol": "AIQApiClient(ScanHistory)",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "symbol": "AIQApiClient(User).-loginUser:withCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
-      "line": 74,
-      "symbol": "AIQApiClient(Scan)",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
+      "line": 69,
+      "symbol": "AIQApiClient(User).-logoutUser:withCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
+      "line": 90,
+      "symbol": "AIQApiClient(ScanHistory).-retrieveScanHistoryWithCount:withOffset:withCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
+      "line": 101,
+      "symbol": "AIQApiClient(Scan).-scanWithUrl:withCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
+      "line": 104,
+      "symbol": "AIQApiClient(Scan).-scanWithUrl:withCollection:withCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
+      "line": 108,
+      "symbol": "AIQApiClient(Scan).-scanWithImage:withCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQApiClient.h",
+      "line": 111,
+      "symbol": "AIQApiClient(Scan).-scanWithImage:withCollection:withCompletion:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
@@ -128,16 +219,184 @@
     },
     {
       "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
-      "line": 14,
-      "symbol": "AIQUserAPIResponse",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "line": 19,
+      "symbol": "AIQUserAPIResponse.email",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
       "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
-      "line": 27,
-      "symbol": "AIQUser",
-      "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
+      "line": 20,
+      "symbol": "AIQUserAPIResponse.name",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 21,
+      "symbol": "AIQUserAPIResponse.gender",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 22,
+      "symbol": "AIQUserAPIResponse.birthdate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 23,
+      "symbol": "AIQUserAPIResponse.avatar",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 24,
+      "symbol": "AIQUserAPIResponse.token",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 34,
+      "symbol": "AIQUser.AIQUserEmail",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 35,
+      "symbol": "AIQUser.AIQUserPassword",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 36,
+      "symbol": "AIQUser.AIQUserName",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 37,
+      "symbol": "AIQUser.AIQUserBirthdate",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 38,
+      "symbol": "AIQUser.AIQUserAvatar",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 40,
+      "symbol": "AIQUser.AIQUserId",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 41,
+      "symbol": "AIQUser.AIQUserGender",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 42,
+      "symbol": "AIQUser.AIQUserAge",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 43,
+      "symbol": "AIQUser.AIQDeviceType",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 44,
+      "symbol": "AIQUser.AIQDeviceModel",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 45,
+      "symbol": "AIQUser.AIQDeviceVersion",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 46,
+      "symbol": "AIQUser.AIQAppVersion",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 48,
+      "symbol": "AIQUser.AIQUserLat",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 49,
+      "symbol": "AIQUser.AIQUserLng",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 51,
+      "symbol": "AIQUser.+initFromDictionary:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 52,
+      "symbol": "AIQUser.-initFromDictionary:",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 54,
+      "symbol": "AIQUser.-requiredParameters",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 55,
+      "symbol": "AIQUser.-optionalParameters",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 56,
+      "symbol": "AIQUser.-allParameters",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Khang/Projects/AIQ/SDK/V2.0/cocoapods/aiqsdk-ios/AIQApi.framework/Headers/AIQUser.h",
+      "line": 57,
+      "symbol": "AIQUser.-loginParameters",
+      "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     }
   ],
