@@ -2,7 +2,7 @@
 AIQSDK is a cocoapod for AIQ's iOS SDK.
 ## Full documentation
 AIQSDK full documentation is hosted on a github page, you can acess it here:
-[https://aiqtech.github.io/aiqsdk-ios/](https://aiqtech.github.io/aiqsdk-ios/)
+[https://scan-to.github.io/aiqsdk-ios/](https://scan-to.github.io/aiqsdk-ios/)
 
 ## Integration using Cocoapods
 
