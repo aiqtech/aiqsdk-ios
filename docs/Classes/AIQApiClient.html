@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          AIQApi Docs
+          AIQApi 0.2.7 Docs
         </a>
         
       </p>
@@ -81,16 +81,16 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Type Definitions.html">Type Definitions</a>
+            <a class="nav-group-name-link" href="../Type%20Definitions.html">Type Definitions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Type Definitions.html#/c:AIQBlocks.h@T@AIQCollectionsCompletionBlock">AIQCollectionsCompletionBlock</a>
+                <a class="nav-group-task-link" href="../Type%20Definitions.html#/c:AIQBlocks.h@T@AIQCollectionsCompletionBlock">AIQCollectionsCompletionBlock</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Type Definitions.html#/c:AIQBlocks.h@T@AIQTokenCompletionBlock">AIQTokenCompletionBlock</a>
+                <a class="nav-group-task-link" href="../Type%20Definitions.html#/c:AIQBlocks.h@T@AIQTokenCompletionBlock">AIQTokenCompletionBlock</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Type Definitions.html#/c:AIQBlocks.h@T@AIQUserRequestCompletionBlock">AIQUserRequestCompletionBlock</a>
+                <a class="nav-group-task-link" href="../Type%20Definitions.html#/c:AIQBlocks.h@T@AIQUserRequestCompletionBlock">AIQUserRequestCompletionBlock</a>
               </li>
             </ul>
           </li>
@@ -99,11 +99,11 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             <h1>AIQApiClient</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">AIQApiClient</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">AIQApiClient</span> <span class="p">:</span> <span class="nc">NSObject</span> <span class="o">&lt;</span><span class="n">NSURLSessionTaskDelegate</span><span class="o">&gt;</span></code></pre>
 
                 </div>
               </div>
@@ -118,9 +118,11 @@
               <div class="task-name-container">
                 <a name="/User"></a>
                 <a name="//apple_ref/objc/Section/User" class="dashAnchor"></a>
-                <a href="#/User">
-                  <h3 class="section-name">User</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/User"></a>
+                  <h3 class="section-name"><p>User</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -144,12 +146,12 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">updateUserProfile</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes.html#/c:objc(cs)AIQUser">AIQUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">user</span>
-           <span class="nf">withCompletion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:AIQBlocks.h@T@AIQUserRequestCompletionBlock">AIQUserRequestCompletionBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+           <span class="nf">withCompletion</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Type%20Definitions.html#/c:AIQBlocks.h@T@AIQUserRequestCompletionBlock">AIQUserRequestCompletionBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateUserProfile</span><span class="p">(</span><span class="n">_</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes.html#/c:objc(cs)AIQUser">AIQUser</a></span><span class="p">,</span> <span class="n">withCompletion</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:AIQBlocks.h@T@AIQUserRequestCompletionBlock">AIQUserRequestCompletionBlock</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateUserProfile</span><span class="p">(</span><span class="n">_</span> <span class="nv">user</span><span class="p">:</span> <span class="kt"><a href="../Classes.html#/c:objc(cs)AIQUser">AIQUser</a></span><span class="p">,</span> <span class="n">withCompletion</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type%20Definitions.html#/c:AIQBlocks.h@T@AIQUserRequestCompletionBlock">AIQUserRequestCompletionBlock</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -185,7 +187,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/aiqtech/aiqsdk-ios/tree/v0.2.4/AIQApi.framework/Headers/AIQApiClient.h#L56">Show on GitHub</a>
+                        <a href="https://github.com/aiqtech/aiqsdk-ios/tree/v0.2.7/AIQApi.framework/Headers/AIQApiClient.h#L57">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -196,9 +198,11 @@
               <div class="task-name-container">
                 <a name="/Collections"></a>
                 <a name="//apple_ref/objc/Section/Collections" class="dashAnchor"></a>
-                <a href="#/Collections">
-                  <h3 class="section-name">Collections</h3>
-                </a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/Collections"></a>
+                  <h3 class="section-name"><p>Collections</p>
+</h3>
+                </div>
               </div>
               <ul class="item-container">
                 <li class="item">
@@ -222,12 +226,12 @@
                         <div class="language">
                           <p class="aside-title">Objective-C</p>
                           <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">retrieveCollectionsWithCompletion</span><span class="p">:</span>
-    <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type Definitions.html#/c:AIQBlocks.h@T@AIQCollectionsCompletionBlock">AIQCollectionsCompletionBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n"><a href="../Type%20Definitions.html#/c:AIQBlocks.h@T@AIQCollectionsCompletionBlock">AIQCollectionsCompletionBlock</a></span><span class="p">)</span><span class="nv">completion</span><span class="p">;</span></code></pre>
 
                         </div>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">retrieveCollections</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type Definitions.html#/c:AIQBlocks.h@T@AIQCollectionsCompletionBlock">AIQCollectionsCompletionBlock</a></span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">retrieveCollections</span><span class="p">(</span><span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Type%20Definitions.html#/c:AIQBlocks.h@T@AIQCollectionsCompletionBlock">AIQCollectionsCompletionBlock</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -251,7 +255,7 @@
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/aiqtech/aiqsdk-ios/tree/v0.2.4/AIQApi.framework/Headers/AIQApiClient.h#L82">Show on GitHub</a>
+                        <a href="https://github.com/aiqtech/aiqsdk-ios/tree/v0.2.7/AIQApi.framework/Headers/AIQApiClient.h#L83">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -264,8 +268,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://aiq.tech" target="_blank" rel="external">AIQ</a>. All rights reserved. (Last updated: 2019-05-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2020 <a class="link" href="https://aiq.tech" target="_blank" rel="external">AIQ</a>. All rights reserved. (Last updated: 2020-01-16)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

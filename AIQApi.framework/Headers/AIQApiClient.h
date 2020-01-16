@@ -24,7 +24,7 @@ typedef NS_ENUM(NSUInteger, AIQApiHeaderOptionsGender) {
 };
 
 /// AIQApiClient
-@interface AIQApiClient : NSObject
+@interface AIQApiClient : NSObject <NSURLSessionTaskDelegate>
 
 + (instancetype)sharedClient;
 
@@ -40,6 +40,7 @@ typedef NS_ENUM(NSUInteger, AIQApiHeaderOptionsGender) {
 
 + (void)setUserLocationLatitude:(float)lat longitude:(float)lng;
 
++ (void)setBaseUrl:(NSString*)url;
 @end
 
 /**

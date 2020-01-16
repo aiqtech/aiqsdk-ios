@@ -2,6 +2,9 @@
 All notable changes to AIQSDK will be documented in this file.
 `AIQSDK` adheres to [Semantic Versioning](http://semver.org/).
 ---
+## [0.3.0](https://github.com/aiqtech/aiqsdk-ios/releases/tag/0.3.0) (16/01/2020)
+Released on Mon, Jan 16, 2020.
+
 ## [0.2.7](https://github.com/aiqtech/aiqsdk-ios/releases/tag/0.2.7) (28/05/2019)
 Released on Mon, May 28, 2019.
 
@@ -10,6 +13,13 @@ Released on Mon, May 27, 2019.
 
 ## [0.2.5](https://github.com/aiqtech/aiqsdk-ios/releases/tag/0.2.5) (13/05/2019)
 Released on Mon, May 13, 2019.
+
+#### Updates for AIQApi
+* Ability to change base url
+* Default url pointed to Scanto server
+
+## [0.3.0](https://github.com/aiqtech/aiqsdk-ios/releases/tag/0.3.0) (16/01/2020)
+Released on Thu, Jan 16, 2020.
 
 #### Updates for AIQApi
 * Update class annotations for AIQSDK docs update

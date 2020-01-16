@@ -20,7 +20,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          AIQApi Docs
+          AIQApi 0.2.7 Docs
         </a>
         
       </p>
@@ -80,16 +80,16 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="Type Definitions.html">Type Definitions</a>
+            <a class="nav-group-name-link" href="Type%20Definitions.html">Type Definitions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Type Definitions.html#/c:AIQBlocks.h@T@AIQCollectionsCompletionBlock">AIQCollectionsCompletionBlock</a>
+                <a class="nav-group-task-link" href="Type%20Definitions.html#/c:AIQBlocks.h@T@AIQCollectionsCompletionBlock">AIQCollectionsCompletionBlock</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Type Definitions.html#/c:AIQBlocks.h@T@AIQTokenCompletionBlock">AIQTokenCompletionBlock</a>
+                <a class="nav-group-task-link" href="Type%20Definitions.html#/c:AIQBlocks.h@T@AIQTokenCompletionBlock">AIQTokenCompletionBlock</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Type Definitions.html#/c:AIQBlocks.h@T@AIQUserRequestCompletionBlock">AIQUserRequestCompletionBlock</a>
+                <a class="nav-group-task-link" href="Type%20Definitions.html#/c:AIQBlocks.h@T@AIQUserRequestCompletionBlock">AIQUserRequestCompletionBlock</a>
               </li>
             </ul>
           </li>
@@ -98,7 +98,7 @@
       <article class="main-content">
 
         <section class="section">
-          <div class="section-content">
+          <div class="section-content top-matter">
             
             <h1 id='aiqsdk-ios' class='heading'>aiqsdk-ios</h1>
 
@@ -106,7 +106,7 @@
 <h2 id='full-documentation' class='heading'>Full documentation</h2>
 
 <p>AIQSDK full documentation is hosted on a github page, you can acess it here:
-<a href="https://aiqtech.github.io/aiqsdk-ios/">https://aiqtech.github.io/aiqsdk-ios/</a></p>
+<a href="https://scan-to.github.io/aiqsdk-ios/">https://scan-to.github.io/aiqsdk-ios/</a></p>
 <h2 id='integration-using-cocoapods' class='heading'>Integration using Cocoapods</h2>
 
 <p>AIQSDK is structure with subspecs with the default being AIQApi, the iOS library for using AIQ&rsquo;s API.</p>
@@ -131,7 +131,7 @@
 
 <p>This is especially useful when you have built your own camera / scanner view.</p>
 <pre class="highlight objective_c"><code>    <span class="p">[[</span><span class="n">AIQApiClient</span> <span class="nf">sharedClient</span><span class="p">]</span> <span class="nf">scanWithImage</span><span class="p">:[</span><span class="n">UIImage</span> <span class="nf">imageWithData</span><span class="p">:</span><span class="n">imageData</span><span class="p">]</span> 
-                               <span class="nf">withCompletion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">AIQScanAPIResponse</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">result</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span>
+                               <span class="nl">withCompletion:</span><span class="o">^</span><span class="p">(</span><span class="n">AIQScanAPIResponse</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">result</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span>
     <span class="p">{</span>                  
         <span class="c1">// no matches found</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
@@ -151,7 +151,7 @@
 
 <p>If you have an url for an image that you like to perform a search query, you can use the scanWithUrl method of <code><a href="Classes/AIQApiClient.html">AIQApiClient</a></code>.</p>
 <pre class="highlight objective_c"><code>    <span class="p">[[</span><span class="n">AIQApiClient</span> <span class="nf">sharedClient</span><span class="p">]</span> <span class="nf">scanWithUrl</span><span class="p">:</span><span class="n">imageUrl</span> 
-                              <span class="nf">withCompletion</span><span class="p">:</span><span class="o">^</span><span class="p">(</span><span class="n">AIQScanAPIResponse</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">result</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span>
+                              <span class="nl">withCompletion:</span><span class="o">^</span><span class="p">(</span><span class="n">AIQScanAPIResponse</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">result</span><span class="p">,</span> <span class="n">NSError</span> <span class="o">*</span> <span class="n">_Nullable</span> <span class="n">error</span><span class="p">)</span>
     <span class="p">{</span>                  
         <span class="c1">// no matches found</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
@@ -175,8 +175,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://aiq.tech" target="_blank" rel="external">AIQ</a>. All rights reserved. (Last updated: 2019-05-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2020 <a class="link" href="https://aiq.tech" target="_blank" rel="external">AIQ</a>. All rights reserved. (Last updated: 2020-01-16)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
